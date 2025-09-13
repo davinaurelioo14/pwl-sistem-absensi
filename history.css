@@ -1,0 +1,147 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom, #a8c7ff, #6b9dfc);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.9;
+}
+
+.sidebar nav ul li.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab.active {
+  background: white;
+  border-bottom: 2px solid #6b9dfc;
+  color: #6b9dfc;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+  font-weight: bold;
+}
+
+.summary-item span {
+  margin-left: 8px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #eaeaea;
+}
+
+/* History List */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.check {
+  font-size: 14px;
+  color: #333;
+}
+
+.status {
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: default;
+}
+
+.status.presence {
+  background: linear-gradient(to right, #a8c7ff, #6b9dfc);
+  color: white;
+}
+
+.status.absence-permit {
+  background: #f3d27b;
+  color: black;
+}
