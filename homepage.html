@@ -3,35 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>HereMe! Dashboard</title>
   <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
+  <div class="container">
 
-  <div class="top-bar">
-    <div class="top-left-icon">👤</div>
-    <div class="profile">
-      <span>Yansen</span>
-      <img src="" alt="Profile"/>
-      <img src="./image.png" alt="">
-    </div>
-  </div>
+    <aside class="sidebar">
+      <h2 class="logo">HereMe!</h2>
+      <nav>
+        <ul>
+          <li class="active"><i>🏠</i> Home</li>
+          <li><i>👤</i> Profile</li>
+          <a href="history.html"><li><i>⏳</i> History</li></a>
+        </ul>
+      </nav>
+    </aside>
 
-  <div class="greeting">
-  Hi, Yansen
-  </div>
 
-<div class="container">
-  <div class="card">
-    <button class="absence"></button>
-    
-  </div>
-  <div class="card">
-    <button class="history"></button>
-    <img src="jam.jpg"/>
-  </div>
-</div>
+    <main class="main-content">
+      <header>
+        <h1>Home</h1>
+      </header>
 
-  <script src="homepage.js"></script>
+      <section class="top-section">
+
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Yansen">
+          <h3>Yansen</h3>
+          <p>Immanuel Christian High School 1</p>
+          <p>Jl. Pramuka, Komplek Kapuas Mutiara Permai</p>
+          <p><b>435 days</b> at Immanuel 1 Christian Vocational School</p>
+        </div>
+
+
+        <div class="greeting-card">
+          <h2>Hi Yansen!!!<br>How are you today?</h2>
+          <div class="moods">
+            <button>😁</button>
+            <button>😄</button>
+            <button>🙂</button>
+            <button>😐</button>
+            <button>☹️</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="check-section">
+        <div class="check-card">
+          <h3>Check-In for today</h3>
+          <p>Starting at 6:30 am</p>
+          <p>Closes at 7:00 am</p>
+          <a href="checkin.html"><button class="btn">Check-In</button></a>
+        </div>
+        <div class="check-card">
+          <h3>Check-Out for today</h3>
+          <p>Starting at 1:50 pm</p>
+          <p>Closes at 1:55 pm</p>
+          <a href="checkin.html"><button class="btn">Check-Out</button></a>
+        </div>
+      </section>
+
+      <section class="presence">
+        <h3 class="presence-title">My presence</h3>
+        <div class="presence-content">
+          <div class="month-card">
+            <h4>September</h4>
+            <table>
+              <tr><td>Presence</td><td>7</td></tr>
+              <tr><td>Absence permit</td><td>1</td></tr>
+              <tr><td>Absence</td><td>0</td></tr>
+            </table>
+          </div>
+          <div class="month-card next">
+            <h4>August</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
