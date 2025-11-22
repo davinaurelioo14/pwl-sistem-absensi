@@ -18,3 +18,7 @@ Admin membuat jadwal kegiatan/rapat.
 Anggota melakukan absensi melalui aplikasi/website.
 Sistem menyimpan data dan merekap kehadiran.
 Admin dapat melihat laporan absensi secara real-time.
+
+ENTITAS YANG DIGUNAKAN
+PHP, CSS, HTML, JS
+
